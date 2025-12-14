@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsApp - Top Headlines</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class = "navbar">
+            <h1 class="logo"> 📰 News App</h1>
+            <ul class ="nav-links">
+                <li><a href ="index.html" class="active">Top Headlines</a></li>
+                <li><a href = "sources.html">Sources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Top US Headlines</h2>
+            <p>Stay updated with the latest news!</p>
+        </section>
+
+        <!--For Loading while fecthing-->
+        <div id="loading" class="loading">Loading news...</div>
+
+        <!--Error Message-->
+        <div id="error" class="error" style="display: none;"></div>
+
+        <!--News Container-->
+        <div id="news-container" class="new-grid">
+
+        </div>
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
