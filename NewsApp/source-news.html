@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsApp - Source Articles</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">📰 NewsApp</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Top Headlines</a></li>
+                <li><a href="sources.html">Sources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="container">
+
+        <section class="hero">
+            <a href="sources.html" class="back-link">← Back to Sources</a>
+            <h2 id="source-title">Articles</h2>
+            <p id="source-description">Loading articles from this source...</p>
+        </section>
+
+
+        <div id="loading" class="loading">Loading articles...</div>
+
+
+        <div id="error" class="error" style="display: none;"></div>
+
+
+        <div id="articles-container" class="news-grid">
+
+        </div>
+    </main>
+
+
+
+
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/source-news.js"></script>
+</body>
+</html>
