@@ -1,4 +1,6 @@
 
+import '../styles/Pages.css';
+
 function TopHeadlines() {
     return (
         <div className="container">
