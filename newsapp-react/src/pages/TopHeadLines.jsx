@@ -2,6 +2,19 @@
 import '../styles/Pages.css';
 
 function TopHeadlines() {
+
+    try {
+        const async data = await fetchNews('/top-headlines?country=us');
+    }
+
+    catch (error) {
+        if (!data) {
+            console.log(error);
+            return "can't fetch data";
+        }
+
+    }
+
     return (
         <div className="container">
             <section className="hero">
@@ -14,6 +27,8 @@ function TopHeadlines() {
             </div>
         </div>
     );
+
+
 }
 
 export default TopHeadlines;
