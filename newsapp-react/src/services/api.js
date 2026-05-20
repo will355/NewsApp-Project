@@ -5,7 +5,7 @@ export async function fetchNews(endpoint) {
         const url = `${BASE_URL}${endpoint}${API_KEY}`;
         console.log('Fetching from:', url);
 
-        const response = await fetch(url)
+        const response = await fetch(url);
 
         if (!response.ok) {
             throw new Error(`Http Error! Status: ${response.status}`);
